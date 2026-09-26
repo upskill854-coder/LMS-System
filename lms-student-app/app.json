@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "LMS Student",
+    "slug": "lms-student-app",
+    "scheme": "lmsstudent",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0B1220"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "android": {
+      "package": "com.yourorg.lmsstudent",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#0B1220"
+      },
+      "permissions": ["INTERNET", "ACCESS_NETWORK_STATE", "RECEIVE_BOOT_COMPLETED"]
+    },
+    "notification": {
+      "icon": "./assets/images/notification-icon.png",
+      "color": "#2563EB"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/notification-icon.png",
+          "color": "#2563EB"
+        }
+      ]
+    ]
+  }
+}
